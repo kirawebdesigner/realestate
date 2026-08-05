@@ -2,7 +2,7 @@
 
 ## Current sprint
 
-Active focus: EstateX-informed Kira homepage reconstruction and validation.
+Active focus: production publishing and live-route validation.
 
 ## Tasks
 
@@ -11,8 +11,8 @@ Active focus: EstateX-informed Kira homepage reconstruction and validation.
 - [x] Establish design read, dials, palette, typography, and component-foundation decision
 - [x] Scaffold the Next.js application
 - [x] Add brand config, types, local data, and imagery
-- [/] Rebuild shared layout and navigation to match supplied reference
-- [/] Rebuild homepage composition and motion from supplied reference
+- [x] Rebuild shared layout and curved responsive navigation from supplied reference
+- [x] Rebuild homepage composition, local imagery, and scroll motion from supplied reference
 - [x] Build property catalog and URL filters
 - [x] Build dynamic property detail and gallery
 - [x] Build developments, about, and contact routes
@@ -20,8 +20,8 @@ Active focus: EstateX-informed Kira homepage reconstruction and validation.
 - [x] Add SEO, sitemap, robots, loading, empty, error, and not-found states
 - [ ] Verify desktop and mobile layouts
 - [ ] Run accessibility and interaction checks
-- [ ] Run lint, type checking, and production build
-- [ ] Publish preview or provide deployment-ready handoff
+- [x] Run lint, type checking, and production build
+- [/] Publish to GitHub and Netlify, then validate the live deployment
 
 ## Bugs and blockers
 

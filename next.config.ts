@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
         { source: "/property-details", destination: "/kira/property-details/index.html" },
         { source: "/blog", destination: "/kira/blog/index.html" },
         { source: "/2025/10/07/home-staging-tips-to-attract-buyers-quickly", destination: "/kira/2025/10/07/home-staging-tips-to-attract-buyers-quickly/index.html" },
+        { source: "/kira/2025/10/07/home-staging-tips-to-attract-buyers-quickly", destination: "/kira/2025/10/07/home-staging-tips-to-attract-buyers-quickly/index.html" },
         { source: "/our-process", destination: "/kira/our-process/index.html" },
         { source: "/agents", destination: "/kira/agents/index.html" },
         { source: "/services", destination: "/kira/services/index.html" },
