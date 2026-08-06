@@ -11,7 +11,7 @@ export const siteConfig = {
   email: "hello@kirarealestate.demo",
   address: "Bole Road, Addis Ababa, Ethiopia",
   officeHours: "Monday to Saturday, 8:30 AM to 5:30 PM",
-  url: "https://kira-real-estate-demo.vercel.app",
+  url: "https://kiraestate.netlify.app",
   socialLinks: [
     { label: "Instagram", href: "https://instagram.com" },
     { label: "LinkedIn", href: "https://linkedin.com" },

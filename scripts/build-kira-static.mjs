@@ -5,6 +5,7 @@ const projectRoot = process.cwd();
 const sourceRoot = path.resolve(projectRoot, "httpsestatex.kitkitgo.com");
 const publicRoot = path.resolve(projectRoot, "public");
 const outputRoot = path.resolve(publicRoot, "kira");
+const siteUrl = "https://kiraestate.netlify.app";
 
 if (!outputRoot.startsWith(`${publicRoot}${path.sep}`)) {
   throw new Error("Refusing to write outside public/.");
@@ -83,6 +84,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .kira-reveal{--kira-reveal-x:0px;--kira-reveal-y:42px;--kira-reveal-delay:0ms;opacity:0;transform:translate3d(var(--kira-reveal-x),var(--kira-reveal-y),0) scale(.985);transition:opacity .78s cubic-bezier(.22,1,.36,1) var(--kira-reveal-delay),transform .9s cubic-bezier(.22,1,.36,1) var(--kira-reveal-delay);will-change:opacity,transform}.kira-reveal[data-kira-motion="left"]{--kira-reveal-x:-46px;--kira-reveal-y:10px}.kira-reveal[data-kira-motion="right"]{--kira-reveal-x:46px;--kira-reveal-y:10px}.kira-reveal[data-kira-motion="scale"]{--kira-reveal-y:18px;transform:translate3d(0,var(--kira-reveal-y),0) scale(.94)}.kira-reveal.is-visible{opacity:1;transform:translate3d(0,0,0) scale(1)}.kira-reveal.is-leaving{transition-duration:.5s,.58s;transition-delay:0ms}.kira-reveal img{backface-visibility:hidden}.kira-motion-ready .kira-header{animation:kira-header-enter .8s cubic-bezier(.22,1,.36,1) both}@keyframes kira-header-enter{from{opacity:0;transform:translateY(-22px)}to{opacity:1;transform:none}}
 .page-id-83 .elementor-widget-heading h1,.page-id-142 .elementor-widget-heading h1{letter-spacing:-.055em!important}.page-id-83 input,.page-id-83 textarea,.page-id-83 select{border-radius:10px!important;border-color:var(--kira-line)!important;background:#f7f8fa!important}.page-id-83 .elementor-button,.page-id-142 .elementor-button{box-shadow:none!important}.page-id-142 .e-con.e-child{border-color:var(--kira-line)!important}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+.skip-link{position:fixed!important;z-index:10000;top:12px!important;left:12px!important;width:auto!important;height:auto!important;margin:0!important;padding:12px 16px!important;overflow:visible!important;clip:auto!important;clip-path:none!important;transform:translateY(calc(-100% - 24px));border:2px solid var(--kira-accent);border-radius:8px;background:#fff;color:var(--kira-ink);font:700 14px/1.2 "Plus Jakarta Sans",sans-serif;box-shadow:0 8px 24px rgba(11,18,32,.18);transition:transform .18s ease!important}.skip-link:focus{transform:translateY(0)}
+.elementor-invisible{visibility:visible!important;opacity:1!important}.elementor-animation-fadeIn,.elementor-animation-fadeInDown,.elementor-animation-fadeInLeft,.elementor-animation-fadeInRight,.elementor-animation-fadeInUp{animation:none!important}
+.elementor>.e-con.e-parent:first-child.kira-reveal{opacity:1!important;transform:none!important}.elementor>.e-con.e-parent:first-child.kira-reveal .kira-motion-media{scale:1!important}
+.elementor-element-41cefa37,.elementor-element-46e8f501,.elementor-element-1eff853b,.elementor-element-1099a1f6{background-image:none!important}
+.kira-icon-button,.kira-favorite,.kira-testimonials__controls button{border-radius:12px!important}.kira-icon-button{width:44px;height:44px;border:1px solid rgba(11,18,32,.16)!important;background:#fff!important;color:var(--kira-ink)!important}.kira-icon-button:hover{border-color:var(--kira-accent)!important;background:#eef2ff!important;color:var(--kira-accent)!important}.kira-favorite{width:44px;height:44px;border:1px solid rgba(11,18,32,.16)!important;background:rgba(255,255,255,.96)!important;color:var(--kira-ink)!important}.kira-favorite:hover{border-color:var(--kira-accent)!important;color:var(--kira-accent)!important}.kira-favorite.is-active{border-color:var(--kira-accent)!important;background:var(--kira-accent)!important;color:#fff!important}
+.kira-property-card__location,.kira-quote__person span,.kira-agent-card p,.kira-more-home p{color:#59677a!important}.kira-property-card__facts{color:#566478!important}
 .kira-icon-button{line-height:0}.kira-icon-button svg,.kira-favorite svg{display:block;flex:none;width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
 .kira-reveal{--kira-reveal-y:64px;transform:translate3d(var(--kira-reveal-x),var(--kira-reveal-y),0) scale(.975);transition-duration:.72s,1s}.kira-reveal[data-kira-motion="left"]{--kira-reveal-x:-72px;--kira-reveal-y:16px}.kira-reveal[data-kira-motion="right"]{--kira-reveal-x:72px;--kira-reveal-y:16px}.kira-reveal[data-kira-motion="scale"]{--kira-reveal-y:26px;transform:translate3d(0,var(--kira-reveal-y),0) scale(.91)}.kira-reveal .kira-motion-media{scale:1.075;transition:scale 1.25s cubic-bezier(.22,1,.36,1) var(--kira-reveal-delay)}.kira-reveal.is-visible .kira-motion-media{scale:1}
 .kira-business-value{padding:112px 24px;background:#0b1220;color:#fff}.kira-business-value__inner{width:min(1200px,100%);margin:auto}.kira-business-value__head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.65fr);gap:70px;align-items:end;margin-bottom:54px}.kira-business-value__head h2{max-width:800px;margin:0;color:#fff;font:700 clamp(42px,5vw,70px)/.98 "Plus Jakarta Sans",sans-serif;letter-spacing:-.055em}.kira-business-value__head p{margin:0;color:rgba(255,255,255,.65);font:400 16px/1.7 "DM Sans",sans-serif}.kira-business-value__grid{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid rgba(255,255,255,.16);border-radius:16px;overflow:hidden}.kira-business-value__item{min-height:220px;padding:30px 24px;border-right:1px solid rgba(255,255,255,.14)}.kira-business-value__item:last-child{border-right:0}.kira-business-value__item svg{width:25px;height:25px;margin-bottom:48px;fill:none;stroke:#9fb2ff;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.kira-business-value__item strong{display:block;color:#fff;font:650 17px/1.3 "Plus Jakarta Sans",sans-serif}.kira-business-value__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.kira-business-value__actions a{display:inline-flex;align-items:center;min-height:50px;padding:0 20px;border-radius:999px;background:var(--kira-accent);color:#fff;font:700 13px "Plus Jakarta Sans",sans-serif}.kira-business-value__actions a:last-child{border:1px solid rgba(255,255,255,.24);background:transparent}@media(max-width:950px){.kira-business-value__head{grid-template-columns:1fr;gap:22px}.kira-business-value__grid{grid-template-columns:repeat(2,1fr)}.kira-business-value__item{border-bottom:1px solid rgba(255,255,255,.14)}}@media(max-width:560px){.kira-business-value{padding:76px 16px}.kira-business-value__grid{grid-template-columns:1fr}.kira-business-value__item{min-height:0;border-right:0;padding:26px 22px}.kira-business-value__item svg{margin-bottom:30px}}
@@ -92,7 +99,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 const searchIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>`;
 const menuIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>`;
 const heartIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"></path></svg>`;
-const kiraHeader = `<header class="kira-header"><div class="kira-header__inner"><a href="/" aria-label="Kira Real Estate home"><span class="kira-wordmark">Kira<span>Real Estate</span></span></a><nav class="kira-header__nav" id="kira-main-nav" aria-label="Primary navigation"><a href="/">Home</a><a href="/properties">Properties</a><a href="/services">Services</a><a href="/blog">Journal</a><a href="/about">About</a></nav><div class="kira-header__tools"><a class="kira-header__phone" href="tel:+251115550140">Call us: <span>+251 11 555 0140</span></a><button class="kira-icon-button kira-search-toggle" type="button" aria-label="Open property search" aria-expanded="false">${searchIcon}</button><a class="kira-header__cta" href="/contact">Schedule a visit</a><button class="kira-icon-button kira-menu-button" type="button" aria-label="Open menu" aria-controls="kira-main-nav" aria-expanded="false">${menuIcon}</button></div></div><div class="kira-search-panel"><form action="/properties" role="search"><label class="screen-reader-text" for="kira-search">Search properties</label><input id="kira-search" name="location" placeholder="Search Bole, CMC, Kazanchis or a property name"><button type="submit">Get current pricing</button></form></div></header>`;
+const kiraHeader = `<header class="kira-header"><div class="kira-header__inner"><a href="/"><span class="kira-wordmark">Kira<span>Real Estate</span></span></a><nav class="kira-header__nav" id="kira-main-nav" aria-label="Primary navigation"><a href="/">Home</a><a href="/properties">Properties</a><a href="/services">Services</a><a href="/blog">Journal</a><a href="/about">About</a></nav><div class="kira-header__tools"><a class="kira-header__phone" href="tel:+251115550140">Call us: <span>+251 11 555 0140</span></a><button class="kira-icon-button kira-search-toggle" type="button" aria-label="Open property search" aria-expanded="false">${searchIcon}</button><a class="kira-header__cta" href="/contact">Schedule a visit</a><button class="kira-icon-button kira-menu-button" type="button" aria-label="Open menu" aria-controls="kira-main-nav" aria-expanded="false">${menuIcon}</button></div></div><div class="kira-search-panel"><form action="/properties" role="search"><label class="screen-reader-text" for="kira-search">Search properties</label><input id="kira-search" name="location" placeholder="Search Bole, CMC, Kazanchis or a property name"><button type="submit">Get current pricing</button></form></div></header>`;
 
 const kiraListingsSection = `<section class="kira-listings" aria-labelledby="kira-listings-title"><div class="kira-listings__inner"><div class="kira-section-heading"><div><p class="kira-section-heading__eyebrow">Selected listings</p><h2 id="kira-listings-title">Homes worth a closer look.</h2></div><p class="kira-services__intro">Explore a focused collection of sample residences across Addis Ababa, selected to make comparison clear and site visits simple.</p></div><div class="kira-listing-filters" aria-label="Filter featured listings"><button class="kira-listing-filter is-active" type="button" data-filter="all">All homes</button><button class="kira-listing-filter" type="button" data-filter="apartment">Apartments</button><button class="kira-listing-filter" type="button" data-filter="villa">Villas</button><button class="kira-listing-filter" type="button" data-filter="penthouse">Penthouses</button></div><div class="kira-listing-grid">
 ${[
@@ -116,7 +123,7 @@ const kiraServicesSection = `<section class="kira-services" aria-labelledby="kir
       <p class="kira-services__intro">From the first shortlist to the final site visit, Kira brings the information, coordination and local context you need into one considered experience.</p>
     </div>
     <div class="kira-services__layout">
-      <a class="kira-services__feature" href="/services" aria-label="Explore Kira property services">
+      <a class="kira-services__feature" href="/services">
         <img src="/images/properties/modern-exterior.jpg" alt="Contemporary residence represented by Kira Real Estate" loading="lazy">
         <span class="kira-services__feature-copy"><strong>A better view of every opportunity.</strong><span>Selected homes and developments across Addis Ababa</span></span>
       </a>
@@ -196,18 +203,21 @@ const kiraJournalEntries = [
   },
 ];
 
-function renderKiraDocument(title, content) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Kira Real Estate demonstration journal for property buyers and developers in Addis Ababa."><title>${title} | Kira Real Estate</title>${brandStyle}${kiraInnerPageStyle}</head><body>${kiraHeader}${content}${kiraFooter}<div class="kira-demo-note">Demonstration website - properties, prices and company information are sample content.</div>${localScript}</body></html>`;
+function renderKiraDocument(title, content, routePath) {
+  const mainContent = content.replace(/<main\b/i, '<main id="content"');
+  const canonicalUrl = `${siteUrl}${routePath}`;
+  const document = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Kira Real Estate demonstration journal for property buyers and developers in Addis Ababa."><link rel="canonical" href="${canonicalUrl}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>${title} | Kira Real Estate</title>${brandStyle}${kiraInnerPageStyle}</head><body><a class="skip-link screen-reader-text" href="#content">Skip to content</a>${kiraHeader}${mainContent}${kiraFooter}<div class="kira-demo-note">Demonstration website - properties, prices and company information are sample content.</div>${localScript}</body></html>`;
+  return addDocumentMetadata(document, routePath);
 }
 
 function renderKiraJournal() {
   const cards = kiraJournalEntries.map((entry) => `<article class="kira-blog-card"><img src="${entry.image}" width="900" height="634" loading="lazy" decoding="async" alt="Architectural image for ${entry.title}"><div class="kira-blog-card__body"><span class="kira-blog-card__meta">${entry.category}</span><h2>${entry.title}</h2><p>${entry.summary}</p><a href="/blog/${entry.slug}">Read article ↗</a></div></article>`).join("");
-  return renderKiraDocument("Journal", `<main class="kira-page"><section class="kira-page__hero"><div class="kira-page__hero-inner"><p class="kira-page__eyebrow">Kira journal</p><h1>Useful thinking for better property decisions.</h1><p>Three concise guides for presenting, evaluating and understanding residential property.</p></div></section><section class="kira-blog"><div class="kira-blog__inner"><div class="kira-blog-grid">${cards}</div></div></section></main>`);
+  return renderKiraDocument("Journal", `<main class="kira-page"><section class="kira-page__hero"><div class="kira-page__hero-inner"><p class="kira-page__eyebrow">Kira journal</p><h1>Useful thinking for better property decisions.</h1><p>Three concise guides for presenting, evaluating and understanding residential property.</p></div></section><section class="kira-blog"><div class="kira-blog__inner"><div class="kira-blog-grid">${cards}</div></div></section></main>`, "/blog");
 }
 
 function renderKiraArticle(entry) {
   const sections = entry.sections.map(([heading, copy]) => `<h2>${heading}</h2><p>${copy}</p>`).join("");
-  return renderKiraDocument(entry.title, `<main class="kira-article"><article><header class="kira-article__hero"><img src="${entry.image}" width="1400" height="740" fetchpriority="high" alt="Architectural image for ${entry.title}"><div class="kira-article__heading"><span class="kira-blog-card__meta">${entry.category}</span><h1>${entry.title}</h1></div></header><div class="kira-article__body"><p>${entry.summary}</p>${sections}<a class="kira-article__back" href="/blog">← Back to the journal</a></div></article></main>`);
+  return renderKiraDocument(entry.title, `<main class="kira-article"><article><header class="kira-article__hero"><img src="${entry.image}" width="1400" height="740" fetchpriority="high" alt="Architectural image for ${entry.title}"><div class="kira-article__heading"><span class="kira-blog-card__meta">${entry.category}</span><h1>${entry.title}</h1></div></header><div class="kira-article__body"><p>${entry.summary}</p>${sections}<a class="kira-article__back" href="/blog">← Back to the journal</a></div></article></main>`, `/blog/${entry.slug}`);
 }
 
 function getKiraPropertiesPage() {
@@ -286,6 +296,44 @@ function replacePageBody(input, replacement) {
   return `${input.slice(0, start)}${replacement}${input.slice(end)}`;
 }
 
+function ensureMainLandmark(input) {
+  if (/<main\b/i.test(input)) {
+    return input.replace(/<main\b(?![^>]*\bid=)/i, '<main id="content"');
+  }
+
+  const start = input.indexOf('<div data-elementor-type="wp-page"');
+  const end = input.indexOf('<footer class="kira-footer"', start);
+  if (start < 0 || end < 0) return input;
+  return `${input.slice(0, start)}<main id="content">${input.slice(start, end)}</main>${input.slice(end)}`;
+}
+
+function addDocumentMetadata(input, routePath) {
+  const canonicalUrl = `${siteUrl}${routePath}`;
+  const description = "Browse Kira Real Estate properties, services and buyer resources in Addis Ababa.";
+  const socialImage = `${siteUrl}/social/kira-share.png`;
+  const withoutOldMetadata = input
+    .replace(/<link\b[^>]*rel=["']canonical["'][^>]*>\s*/gi, "")
+    .replace(/<meta\b[^>]*name=["']description["'][^>]*>\s*/gi, "");
+  return withoutOldMetadata.replace(
+    "</head>",
+    `<meta name="description" content="${description}"><link rel="canonical" href="${canonicalUrl}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Kira Real Estate"><meta property="og:title" content="Kira Real Estate | Find the right property in Addis"><meta property="og:description" content="${description}"><meta property="og:url" content="${canonicalUrl}"><meta property="og:image" content="${socialImage}"><meta property="og:image:secure_url" content="${socialImage}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Kira Real Estate — find the right property in Addis without the guesswork"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Kira Real Estate | Find the right property in Addis"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${socialImage}"></head>`,
+  );
+}
+
+function removeLegacyRuntime(input) {
+  return input.replace(/<script\b(?![^>]*type=["']application\/ld\+json["'])[^>]*>[\s\S]*?<\/script>\s*/gi, "");
+}
+
+function publicRouteForFile(file) {
+  const relative = path.relative(outputRoot, file).split(path.sep).join("/");
+  let assetRoute = `/kira/${relative}`.replace(/index\.html$/i, "");
+  if (assetRoute === "/kira/") return "/";
+  for (const [sourceRoute, publicRoute] of routeMap) {
+    if (assetRoute === sourceRoute) return publicRoute;
+  }
+  return assetRoute;
+}
+
 async function collectFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
   const files = [];
@@ -297,7 +345,7 @@ async function collectFiles(directory) {
   return files;
 }
 
-function transformHtml(input) {
+function transformHtml(input, routePath) {
   let output = input
     .replaceAll("https://estatex.kitkitgo.com/", "/kira/")
     .replaceAll("http://estatex.kitkitgo.com/", "/kira/")
@@ -315,7 +363,11 @@ function transformHtml(input) {
     .replaceAll("https%3A%2F%2Fkira-real-estate.kitkitgo.com%2F", "%2F")
     .replace(/https?:\/\/kira-real-estate\.kitkitgo\.com\/?/gi, "/")
     .replace(/https?:\/\/(?:www\.)?kitpapa\.net\/kira-real-estate[^"'\s<]*/gi, "/blog")
-    .replace(/<img(?![^>]*\bdecoding=)/gi, '<img decoding="async"');
+    .replace(/<img(?![^>]*\bdecoding=)/gi, '<img decoding="async"')
+    .replace(/<img(?![^>]*\bwidth=)([^>]*\bimage-(?:71|72|73)-1\.png[^>]*)>/gi, '<img width="398" height="327"$1>')
+    .replace(/aria-label=["']video-button["']/gi, 'aria-label="Schedule a Property Visit"')
+    .replace(/<a class="elementskit-btn whitespace--normal" id="" href="([^"]+)">/gi, '<a class="elementskit-btn whitespace--normal" href="$1" aria-label="Read article">')
+    .replace(/<a([^>]*class=["'][^"']*elementskit-btn[^"']*["'][^>]*)>(\s*<span[^>]*aria-hidden=["']true["'][^>]*>[\s\S]*?<\/span>\s*)<\/a>/gi, '<a$1 aria-label="Read article">$2</a>');
 
   // Keep downloaded assets under /kira/. Only rewrite actual page links to the
   // clean public routes; replacing every /kira/ prefix strips CSS/JS paths.
@@ -340,6 +392,10 @@ function transformHtml(input) {
   output = replaceFooter(output);
   for (const [pattern, replacement] of copyReplacements) output = output.replace(pattern, replacement);
 
+  output = ensureMainLandmark(output);
+  output = addDocumentMetadata(output, routePath);
+  output = removeLegacyRuntime(output);
+
   output = output
     .replace("</head>", `${brandStyle}${kiraInnerPageStyle}<link rel="preload" as="image" href="/kira/wp-content/uploads/2025/10/image-53-1.png"></head>`)
     .replace("</body>", `<div class="kira-demo-note">Demonstration website - properties, prices and company information are sample content.</div>${localScript}</body>`);
@@ -356,7 +412,7 @@ for (const file of files) {
   if (![".html", ".css", ".js"].includes(extension)) continue;
   const content = await readFile(file, "utf8");
   const transformed = extension === ".html"
-    ? transformHtml(content)
+    ? transformHtml(content, publicRouteForFile(file))
     : applyKiraPalette(content.replaceAll("https://estatex.kitkitgo.com/", "/kira/").replaceAll("http://estatex.kitkitgo.com/", "/kira/"));
   await writeFile(file, transformed, "utf8");
 }

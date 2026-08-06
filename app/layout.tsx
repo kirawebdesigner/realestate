@@ -17,7 +17,13 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     type: "website",
     locale: "en_ET",
-    images: [{ url: "/images/kira-hero.png", width: 1680, height: 945, alt: "Contemporary apartment residence overlooking Addis Ababa at dusk" }],
+    images: [{ url: "/social/kira-share.png", width: 1200, height: 630, alt: "Kira Real Estate — find the right property in Addis without the guesswork" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kira Real Estate | Find the right property in Addis",
+    description: siteConfig.description,
+    images: ["/social/kira-share.png"],
   },
   robots: { index: true, follow: true },
 };
