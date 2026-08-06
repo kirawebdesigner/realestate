@@ -265,7 +265,7 @@ function replaceHomepageServices(input) {
 
 function insertHomepageFinder(input) {
   if (!input.includes("page-id-188")) return input;
-  const markerIndex = input.indexOf('data-id="26c3e606"');
+  const markerIndex = input.indexOf('data-id="46e8f501"');
   const start = input.lastIndexOf("<div", markerIndex);
   if (markerIndex < 0 || start < 0) return input;
   return `${input.slice(0, start)}${kiraPropertyFinder}${input.slice(start)}`;
