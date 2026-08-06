@@ -62,6 +62,13 @@ Reading this as: a reference-matched real estate marketing site for Ethiopian pr
 - Favorite and submit feedback acknowledge actions
 - All automatic motion respects `prefers-reduced-motion`
 
+## Property finder
+
+- Deep navy architectural shell with white controls and the Kira cobalt search action
+- Five-column desktop layout, two-column tablet layout, and a readable stacked mobile card
+- Slight hero overlap creates hierarchy without covering the headline or primary actions
+- Native select controls retain predictable keyboard and touch behavior
+
 ## Reference interpretation
 
 - Keep the usable hero-search relationship and scannable listings

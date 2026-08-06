@@ -5,11 +5,12 @@
 ### Discover a property
 
 1. Visitor lands on the cinematic homepage.
-2. Visitor sets location, type, price, and bedroom criteria.
-3. Search navigates to `/properties` with URL filters applied.
-4. Visitor sorts or refines results and opens a property.
-5. Visitor reviews gallery, specifications, amenities, and similar listings.
-6. Visitor schedules a visit or opens a prefilled WhatsApp inquiry.
+2. Visitor sets location, property type, bedroom count, and availability criteria in the finder below the hero.
+3. Search navigates to `/properties` with URL filters applied and retained in the controls.
+4. The catalog announces the result count, displays matching cards, and offers clear-filter recovery when needed.
+5. Visitor sorts or refines results and opens a property.
+6. Visitor reviews gallery, specifications, amenities, and similar listings.
+7. Visitor schedules a visit or opens a prefilled WhatsApp inquiry.
 
 ### Save and compare
 
@@ -49,4 +50,3 @@ property data -> cards, filters, detail pages, form options, structured data
 URL search params -> filter state -> derived result set
 localStorage -> favorite hook -> favorite controls
 ```
-

@@ -27,6 +27,7 @@ Many property websites separate company credibility from useful property discove
 - Accessible navigation, dialogs, drawers, and form controls
 - EstateX-reference homepage reconstruction with original Kira branding and content
 - Responsive service carousel, reveal motion, property collections, advisor grid, editorial news and CTA footer
+- Premium homepage property finder with location, type, bedroom and status filters backed by shareable URLs
 
 ## Success criteria
 

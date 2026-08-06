@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRight, Bath, BedDouble, Building2, Building, CalendarCheck, HandCoins, Home, KeyRound, MapPin, Maximize2, MessageCircle, ShieldCheck, Warehouse } from "lucide-react";
 import { Reveal } from "@/components/home/reveal";
 import { ServiceCarousel } from "@/components/home/service-carousel";
+import { PropertySearchForm } from "@/components/property/property-search-form";
 import { getWhatsAppUrl } from "@/config/site";
 import { properties } from "@/data/properties";
 
@@ -62,6 +63,8 @@ export default function HomePage() {
           </Reveal>
         </div>
       </section>
+
+      <PropertySearchForm />
 
       <section className="warm-section relative overflow-hidden py-14 md:py-28">
         <div className="container-narrow">

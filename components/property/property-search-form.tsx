@@ -1,37 +1,30 @@
 import Form from "next/form";
 import { Search } from "lucide-react";
-import { neighborhoods, propertyTypes } from "@/data/properties";
+import { neighborhoods, propertyStatuses, propertyTypes } from "@/data/properties";
+
+const bedroomOptions = [["1", "1 bedroom"], ["2", "2 bedrooms"], ["3", "3 bedrooms"], ["4", "4+ bedrooms"]] as const;
 
 export function PropertySearchForm() {
   return (
-    <Form action="/properties" className="grid gap-3 rounded-[var(--radius-media)] border border-[color:rgb(255_255_255_/_0.35)] bg-[color:rgb(251_250_246_/_0.96)] p-4 shadow-[0_24px_60px_rgba(24,28,20,.18)] backdrop-blur-md md:grid-cols-2 xl:grid-cols-[1.15fr_1fr_.8fr_.8fr_.7fr_auto]">
-      <SearchSelect name="location" label="Location" options={neighborhoods} />
-      <SearchSelect name="type" label="Property type" options={propertyTypes} />
-      <SearchInput name="minPrice" label="Minimum price" placeholder="ETB 10M" />
-      <SearchInput name="maxPrice" label="Maximum price" placeholder="ETB 35M" />
-      <SearchSelect name="bedrooms" label="Bedrooms" options={["1", "2", "3", "4", "5"]} suffix="+" />
-      <button type="submit" className="button-primary mt-auto min-h-12"><Search size={18} />Search</button>
-    </Form>
+    <section className="relative z-10 -mb-8 px-4 md:-mb-10" aria-labelledby="property-finder-title">
+      <div className="mx-auto w-full max-w-[1240px] -translate-y-4 rounded-[18px] bg-[#0b1833] p-3 shadow-[0_24px_60px_rgb(11_24_51_/_0.2)] md:-translate-y-8 md:p-4">
+        <div className="mb-3 flex items-center justify-between px-1 text-white md:hidden">
+          <div><p className="text-[10px] font-extrabold uppercase tracking-[.18em] text-[#9fb2ff]">Property finder</p><p className="mt-1 text-lg font-extrabold">Find a property</p></div>
+          <span className="text-xs text-white/55">12 listings</span>
+        </div>
+        <h2 id="property-finder-title" className="sr-only">Find a property</h2>
+        <Form action="/properties" className="grid gap-2.5 md:grid-cols-2 xl:grid-cols-[1.45fr_1fr_.9fr_1fr_64px]">
+          <SearchSelect name="location" label="Location" placeholder="Search by location" options={neighborhoods.map((item) => [item, item] as const)} />
+          <SearchSelect name="type" label="Property type" placeholder="Property type" options={propertyTypes.map((item) => [item, item] as const)} />
+          <SearchSelect name="bedrooms" label="Bedrooms" placeholder="Any bedrooms" options={bedroomOptions} />
+          <SearchSelect name="status" label="Property status" placeholder="Any status" options={propertyStatuses.map((item) => [item, item] as const)} />
+          <button type="submit" className="flex min-h-14 items-center justify-center gap-2 rounded-[10px] border border-[#3156d3] bg-[#3156d3] px-5 font-extrabold text-white transition-[background-color,transform] duration-200 hover:bg-[#2648bd] active:scale-[.98] xl:px-0" aria-label="Search properties"><Search size={21} strokeWidth={2} aria-hidden="true" /><span className="xl:sr-only">Search properties</span></button>
+        </Form>
+      </div>
+    </section>
   );
 }
 
-function SearchSelect({ name, label, options, suffix = "" }: { name: string; label: string; options: readonly string[]; suffix?: string }) {
-  return (
-    <label className="grid gap-1 text-xs font-bold text-[var(--muted)]">
-      {label}
-      <select name={name} className="min-h-11 rounded-[var(--radius-control)] bg-transparent text-sm font-semibold text-[var(--ink)] outline-none">
-        <option value="">Any</option>
-        {options.map((option) => <option key={option} value={option}>{option}{suffix}</option>)}
-      </select>
-    </label>
-  );
-}
-
-function SearchInput({ name, label, placeholder }: { name: string; label: string; placeholder: string }) {
-  return (
-    <label className="grid gap-1 text-xs font-bold text-[var(--muted)]">
-      {label}
-      <input name={name} inputMode="numeric" placeholder={placeholder} className="min-h-11 bg-transparent text-sm font-semibold text-[var(--ink)] outline-none placeholder:text-[#767970]" />
-    </label>
-  );
+function SearchSelect({ name, label, placeholder, options }: { name: string; label: string; placeholder: string; options: readonly (readonly [string, string])[] }) {
+  return <label className="grid min-w-0 gap-1 rounded-[10px] border border-white/15 bg-white px-4 py-2 text-[10px] font-extrabold uppercase tracking-[.12em] text-[#697586] transition-[border-color,box-shadow] focus-within:border-[#3156d3] focus-within:shadow-[0_0_0_3px_rgb(49_86_211_/_0.18)]">{label}<select name={name} defaultValue="" className="min-h-7 w-full cursor-pointer appearance-auto bg-transparent text-sm font-bold normal-case tracking-normal text-[#0b1220] outline-none"><option value="">{placeholder}</option>{options.map(([value, text]) => <option key={value} value={value}>{text}</option>)}</select></label>;
 }

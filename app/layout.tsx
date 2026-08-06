@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     type: "website",
     locale: "en_ET",
-    images: [{ url: "/social/kira-share.png", width: 1200, height: 630, alt: "Kira Real Estate — find the right property in Addis without the guesswork" }],
+    images: [{ url: "/social/kira-share.png", width: 1200, height: 630, alt: "Kira Real Estate - find the right property in Addis without the guesswork" }],
   },
   twitter: {
     card: "summary_large_image",

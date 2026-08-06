@@ -13,5 +13,6 @@ export default defineConfig([
     "httpsestatex.kitkitgo.com/**",
     "reference/**",
     "public/kira/**",
+    ".netlify/**",
   ]),
 ]);

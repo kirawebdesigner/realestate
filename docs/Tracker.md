@@ -2,7 +2,7 @@
 
 ## Current sprint
 
-Active focus: production publishing and live-route validation.
+Active focus: property finder integration and responsive demo polish.
 
 ## Tasks
 
@@ -22,6 +22,9 @@ Active focus: production publishing and live-route validation.
 - [ ] Run accessibility and interaction checks
 - [x] Run lint, type checking, and production build
 - [/] Publish to GitHub and Netlify, then validate the live deployment
+- [x] Add the advanced homepage property finder and URL-backed filtering
+- [x] Fix search and favorite button icon alignment
+- [x] Validate property finder responsive rules, keyboard semantics, URL state, and empty states
 
 ## Bugs and blockers
 

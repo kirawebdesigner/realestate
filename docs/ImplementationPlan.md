@@ -41,3 +41,10 @@
 
 - Publish through Sites if available
 - Otherwise confirm readiness for Vercel and Netlify and provide exact commands
+
+## Demo polish pass
+
+- Add the homepage property finder below the hero
+- Connect finder fields to URL-backed catalog filtering and empty-state recovery
+- Normalize header search and listing favorite icon alignment
+- Validate the regenerated Netlify static mirror at desktop, tablet, and mobile widths
