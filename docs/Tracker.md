@@ -26,6 +26,7 @@ Active focus: property finder integration and responsive demo polish.
 - [x] Fix search and favorite button icon alignment
 - [x] Validate property finder responsive rules, keyboard semantics, URL state, and empty states
 - [x] Correct the static homepage finder placement to the hero/category boundary
+- [x] Repair mobile hero spacing, collapsible finder, touch targets, and advisor grid
 
 ## Bugs and blockers
 
